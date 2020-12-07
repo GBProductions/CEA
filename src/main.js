@@ -2,7 +2,8 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
-import { convertAUD, convertEUR, convertGBP, convertJPY, convertCHF, notCurrency, statusError } from './js/international';
+import { Country } from './js/api.js';
+//import { convertAUD, convertEUR, convertGBP, convertJPY, convertCHF, notCurrency, statusError } from './js/international';
 
 
 
@@ -14,6 +15,9 @@ $('document').ready(function() {
     const currency = $('#currencyConvert').val();
     $('#currencyConvert').val("");
 
+    Country.currency();
 
+    console.log(Country.currency());
 
+  });
 });
