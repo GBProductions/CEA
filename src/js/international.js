@@ -1,7 +1,7 @@
 import $ from 'jquery';
 
-export function convertAUD(response, usDollar) {
-  $('.showAUD').text("Your $" + usDollar + " is equal to " + (response.conversion_rates.AUD * usDollar) + " AUD");
+export function convertAUD(body, usDollar) {
+  $('.showAUD').text("Your $" + usDollar + " is equal to " + (body.conversion_rates.AUD * usDollar) + " AUD");
   $('.showEUR').text("");
   $('.showGBP').text("");
   $('.showJPY').text("");
@@ -10,9 +10,9 @@ export function convertAUD(response, usDollar) {
   $('.statusError').text("");
 }
 
-export function convertEUR(response, usDollar) {
+export function convertEUR(body, usDollar) {
   $('.showAUD').text("");
-  $('.showEUR').text("Your $" + usDollar + " is equal to " + (response.conversion_rates.EUR * usDollar) + " EUR");
+  $('.showEUR').text("Your $" + usDollar + " is equal to " + (body.conversion_rates.EUR * usDollar) + " EUR");
   $('.showGBP').text("");
   $('.showJPY').text("");
   $('.showCHF').text("");
@@ -20,32 +20,32 @@ export function convertEUR(response, usDollar) {
   $('.statusError').text("");
 }
 
-export function convertGBP(response, usDollar) {
+export function convertGBP(body, usDollar) {
   $('.showAUD').text("");
   $('.showEUR').text("");
-  $('.showGBP').text("Your $" + usDollar + " is equal to " + (response.conversion_rates.GBP * usDollar) + " GBP");
+  $('.showGBP').text("Your $" + usDollar + " is equal to " + (body.conversion_rates.GBP * usDollar) + " GBP");
   $('.showJPY').text("");
   $('.showCHF').text("");
   $('.showErrors').text("");
   $('.statusError').text("");
 }
 
-export function convertJPY(response, usDollar) {
+export function convertJPY(body, usDollar) {
   $('.showAUD').text("");
   $('.showEUR').text("");
   $('.showGBP').text("");
-  $('.showJPY').text("Your $" + usDollar + " is equal to " + (response.conversion_rates.JPY * usDollar) + " JPY");
+  $('.showJPY').text("Your $" + usDollar + " is equal to " + (body.conversion_rates.JPY * usDollar) + " JPY");
   $('.showCHF').text("");
   $('.showErrors').text("");
   $('.statusError').text("");
 }
 
-export function convertCHF(response, usDollar) {
+export function convertCHF(body, usDollar) {
   $('.showAUD').text("");
   $('.showEUR').text("");
   $('.showGBP').text("");
   $('.showJPY').text("");
-  $('.showCHF').text("Your $" + usDollar + " is equal to " + (response.conversion_rates.CHF * usDollar) + " CHF");
+  $('.showCHF').text("Your $" + usDollar + " is equal to " + (body.conversion_rates.CHF * usDollar) + " CHF");
   $('.showErrors').text("");
   $('.statusError').text("");
 }

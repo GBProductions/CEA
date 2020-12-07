@@ -22,25 +22,25 @@ $('document').ready(function() {
 
     promise.then(function(response) {
       let body = JSON.parse(response);
-    });
 
-    if (currency === "AUD") {
-      convertAUD(response, usDollar);
-    } else if (currency === "EUR") {
-      convertEUR(response, usDollar);
-    } else if (currency === "GBP") {
-      convertGBP(response, usDollar);
-    } else if (currency === "JPY") {
-      convertJPY(response, usDollar);
-    } else if (currency === "CHF") {
-      convertCHF(response, usDollar);
-    } else if ((currency !== "EUR" || "GBP" || "JPY" || "CHF")) {
-      notCurrency(currency);
-    }
-    if (this.status !== 200) {
-      let error = this.status;
-      statusError(error);
-    };
+
+      if (currency === "AUD") {
+        convertAUD(body, usDollar);
+      } else if (currency === "EUR") {
+        convertEUR(body, usDollar);
+      } else if (currency === "GBP") {
+        convertGBP(body, usDollar);
+      } else if (currency === "JPY") {
+        convertJPY(body, usDollar);
+      } else if (currency === "CHF") {
+        convertCHF(body, usDollar);
+      } else if (currency !== "EUR" || "GBP" || "JPY" || "CHF") {
+        notCurrency(currency);
+      }
+      if (this.status !== 200) {
+        let error = this.status;
+        statusError(error);
+      }
+    });
   });
 });
-// $('.showAUD').text("Your $" + usDollar + " is equal to " + (body.conversion_rates.AUD * usDollar) + " " + currency);

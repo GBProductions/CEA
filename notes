@@ -20,3 +20,7 @@
     if (this.readyState === 4 && this.status !== 200) {
       let error = this.status;
       statusError(error);
+
+// $('.showAUD').text("Your $" + usDollar + " is equal to " + (body.conversion_rates.AUD * usDollar) + " " + currency);
+
+, //notCurrency//
