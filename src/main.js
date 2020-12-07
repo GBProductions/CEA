@@ -34,7 +34,7 @@ $('document').ready(function() {
         convertJPY(body, usDollar);
       } else if (currency === "CHF") {
         convertCHF(body, usDollar);
-      } else if (currency !== "EUR" || "GBP" || "JPY" || "CHF") {
+      } else {
         notCurrency(currency);
       }
       if (this.status !== 200) {
