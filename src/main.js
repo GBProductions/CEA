@@ -21,7 +21,7 @@ $('document').ready(function() {
     let promise = Country.currencyConversion(USD);
 
     promise.then(function(response) {
-      let body = JSON.parse(response);
+      const body = JSON.parse(response);
 
 
       if (currency === "AUD") {
