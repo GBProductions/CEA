@@ -19,7 +19,7 @@ _Using the Exchangerate-API, find out how much your money is worth in various in
 
 * _Open terminal on computer._
 * _Navigate to Desktop._
-* _Type "git clone https://github.com/GBProductions/Currency-Exchange-Assignment.git" into command line and press ENTER._
+* _Type "git clone https://github.com/GBProductions/CEA.git" into command line and press ENTER._
 * _Navigate to Currency-Exchange-Assignment folder and enter "code ." into command line and press ENTER to open in VS Code._
 * _Use VSCode to create a ".env" file in the root of your directory (or type "touch .env" into the command line.) Write the text "API_KEY="._
 * _In a internet browser, go to <https://www.exchangerate-api.com/> and apply for a Free API key (you will be required to create an account using your email address.)_
