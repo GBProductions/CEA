@@ -59,13 +59,3 @@ export function notCurrency(currency) {
   $('.showErrors').text("The currency " + currency + " doesn't exist!");
   $('.statusError').text("");
 }
-
-export function statusError(error) {
-  $('.showAUD').text("");
-  $('.showEUR').text("");
-  $('.showGBP').text("");
-  $('.showJPY').text("");
-  $('.showCHF').text("");
-  $('.showErrors').text("");
-  $('.statusError').text("You have a " + error + " status error!");
-}

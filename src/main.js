@@ -3,7 +3,7 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 import Country from './js/api';
-import { convertAUD, convertEUR, convertGBP, convertJPY, convertCHF, statusError, notCurrency } from './js/international';
+import { convertAUD, convertEUR, convertGBP, convertJPY, convertCHF, notCurrency } from './js/international';
 
 function clearFields() {
   $('#usdInput').val("");
@@ -22,6 +22,7 @@ $('document').ready(function() {
 
     promise.then(function(response) {
       const body = JSON.parse(response);
+      console.log(this.status);
       if (currency === "AUD") {
         convertAUD(body, usDollar);
       } else if (currency === "EUR") {
