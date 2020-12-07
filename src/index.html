@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Exchange</title>
+</head>
+<body>
+  <div class="jumbotron">
+    <h1>Currency Exchange</h1>
+    </div>
+    <div class="container">
+      <h2>Convert your US dollars (USD) into international currencies!</h2>
+      <h3>These are the available currencies:</h3>
+      <ul>
+        <li>Australia Dollar: AUD</li>
+        <li>Euro: EUR</li>
+        <li>Great Britain: GBP</li>
+        <li>Japan Yen: JPY</li>
+        <li>Switzerland Franc: CHF</li>
+      </ul>
+      <br>
+      <form>
+        <label for="usdInput">Write in USD here: <b>$</b></label>
+        <input type="text" id="usdInput" placeholder="E.g. 1, 10, 1000...">
+        <br>
+        <label for="currencyConvert">Write in currency to convert to:</label>
+        <input type="text" id="currencyConvert" placeholder="E.g. AUD, EUR, etc.">
+        <br>
+        <button class="btn-success" id="submitUSD">Submit</button>
+        <button class="btn-success" type="reset" id="clear">Clear</button>
+      </form>
+      <div class="showAUD"></div>
+      <div class="showEUR"></div>
+      <div class="showGBP"></div>
+      <div class="showJPY"></div>
+      <div class="showCHF"></div>
+      <div class="showErrors"></div>
+      <div class="statusError"></div>
+    </div>
+  </div>
+
+</body>
+</html>
