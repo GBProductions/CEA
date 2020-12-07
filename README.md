@@ -1,6 +1,6 @@
 # _Currency Exchange_
 
-#### _Using an Exchange Rate API, find out how much money you have in various international currencies. Nov. 20, 2020_
+#### _Using an Exchange Rate API, find out how much money you have in various international currencies. Dec. 6th, 2020_
 
 #### By _**Garrett Brown**_
 
